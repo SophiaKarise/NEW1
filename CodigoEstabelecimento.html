@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bem-vindo(a)</title>
+</head>
+<body>
+  <div class="main-codigo">
+    <div class="left-codigo">
+      <h1>Sua cantina a um clique</h1>
+
+    </div>
+    <div class="right-codigo">
+      <div class="card-codigo">
+        <h1>Codigo do estabelecimento</h1>
+        <div class="textfield">
+          <label for="usuario">Insira o codigo da sua cantina</label>
+          <input type="text" name="usuario" placeholder="Código">
+        </div>
+      
+        <button class="btn-Confirmar">Confirmar</button>
+        <div class="Slogan">
+           <label><a>Sua cantina a um clique</a></label> 
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+<style>@charset 'UTF-8';
+   
+    
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif;
+    }
+    
+    body * {
+      box-sizing: border-box;
+    }
+    
+    .main-codigo {
+      width: 100vw;
+      height: 100vh;
+      background: #201b2c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .left-codigo {
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .left-codigo > h1 {
+      color: #ff9b04;
+      font-size: 2.5vw;
+      text-align: center;
+    }
+    
+    
+    .right-codigo {
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card-codigo {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px 35px;
+      background: #2f2841;
+      border-radius: 20px;
+      box-shadow: 0px 10px 40px #00000056;
+    }
+    
+    .card-codigo > h1 {
+      color: #ff9b04;
+      font-weight: 800;
+   
+      text-align: center;
+    }
+    
+    .textfield {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 10px 0px;
+    }
+    
+    .textfield > input {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      background: #514869;
+      color: #f0ffffde;
+      font-size: 12pt;
+      box-shadow: 0px 10px 40px #00000056;
+      outline: none;
+      box-sizing: border-box;
+    }
+    
+    .textfield > label {
+      color: #f0ffffde;
+      margin-bottom: 10px;
+    }
+    
+    .textfield > input::placeholder {
+      color: #f0ffff94;
+    }
+    
+    .btn-Confirmar {
+      width: 100%;
+      padding: 16px 0;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: #2b134b;
+      background: #ff9b04;
+      cursor: pointer;
+      box-shadow: 0px 10px 40px -12px #ff880052;
+    }
+   
+    @media only screen and (max-width: 950px){
+      .card-login{
+        width: 85%;
+      }
+    }
+    
+    
+    @media only screen and (max-width: 600px){
+      .main-codigo{
+        flex-direction: column;
+      }
+    
+      .left-codigo > h1 {
+        display: none;
+      }
+    
+      .left-codigo {
+        width: 100%;
+        height: auto;
+      }
+    
+      .right-codigo {
+        width: 100%;
+        height: auto;
+      }
+    
+      .card-codigo {
+        width: 90%;
+      }
+    }
+    .Permitir label a{
+        color: blanchedalmond;
+        text-decoration: none;
+        
+        
+    }
+    .Slogan {
+    padding: 5px 0;
+      margin: 5px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #000000;
+      
+      
+  }
+    
+   </style>
+   </html>

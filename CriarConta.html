@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bem-vindo(a)</title>
+</head>
+<body>
+  <div class="main-new">
+    <div class="left-new">
+      <h1>Sua cantina a um clique</h1>
+    </div>
+    <div class="right-new">
+      <div class="card-new">
+        <h1>Criar conta</h1>
+        <div class="textfield">
+          <label for="usuario">Usuário</label>
+          <input type="text" name="usuario" placeholder="Email">
+        </div>
+        <div class="textfield">
+          <label for="password">Senha</label>
+          <input type="password" name="password" placeholder="Senha" required>
+        </div>
+        <div class="textfield">
+            <label for="password">Confirmar Senha</label>
+            <input type="password" name="password" placeholder="Confirmar Senha" required>
+          </div>
+          <div class="textfield">
+            <label for="CPF">CPF</label>
+            <input type="number" name="CPF" placeholder="CPF" required>
+          </div>
+          <div class="textfield">
+          <label for="Telefone">Telefone</label>
+          <input type="tel" name="Telefone" placeholder="Telefone" required>
+        </div>
+        <button class="btn-criar">Criar</button>
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+<style>@charset 'UTF-8';
+   
+    
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif;
+    }
+    
+    body * {
+      box-sizing: border-box;
+    }
+    
+    .main-new {
+      width: 100vw;
+      height: 100vh;
+      background: #201b2c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .left-new {
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .left-new > h1 {
+      color: #ff9b04;
+      font-size: 2.5vw;
+    }
+    
+    
+    
+    .right-new {
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card-new {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px 35px;
+      background: #2f2841;
+      border-radius: 20px;
+      box-shadow: 0px 10px 40px #00000056;
+    }
+    
+    .card-new > h1 {
+      color: #ff9b04;
+      font-weight: 800;
+      margin: 0;
+    }
+    
+    .textfield {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 10px 0px;
+    }
+    
+    .textfield > input {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      background: #514869;
+      color: #f0ffffde;
+      font-size: 12pt;
+      box-shadow: 0px 10px 40px #00000056;
+      outline: none;
+      box-sizing: border-box;
+    }
+    
+    .textfield > label {
+      color: #f0ffffde;
+      margin-bottom: 10px;
+    }
+    
+    .textfield > input::placeholder {
+      color: #f0ffff94;
+    }
+    
+    .btn-criar {
+      width: 100%;
+      padding: 16px 0;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: #2b134b;
+      background: #ff9b04;
+      cursor: pointer;
+      box-shadow: 0px 10px 40px -12px #ff880052;
+    }
+    
+    @media only screen and (max-width: 950px){
+      .card-new{
+        width: 85%;
+      }
+    }
+    
+    
+    @media only screen and (max-width: 600px){
+      .main-new{
+        flex-direction: column;
+      }
+    
+      .left-new > h1 {
+        display: none;
+      }
+    
+      .left-new {
+        width: 100%;
+        height: auto;
+      }
+    
+      .right-new {
+        width: 100%;
+        height: auto;
+      }
+    
+      .card-new {
+        width: 90%;
+      }
+    }
+    .Criar label a{
+        color: blanchedalmond;
+        text-decoration: none;
+        
+        
+    }
+    
+   </style>
+   </html>
